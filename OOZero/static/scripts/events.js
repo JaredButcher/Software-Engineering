@@ -7,8 +7,8 @@ function decrypt(id){
             if(data["sucess"]){
                 document.getElementById("description" + id).innerHTML = data['data'];
                 document.getElementById("decryptForm" + id).style.display = "none";
-                document.getElementById("editEvent" + id).style.display = "inline";
-                document.getElementById("reEncrypt" + id).style.display = "inline";
+                document.getElementById("editEvent" + id).style.display = "inline-block";
+                document.getElementById("reEncrypt" + id).style.display = "inline-block";
             }else{
                 document.getElementById("description" + id).innerHTML = '<span style="font-style: italic;color: red;">Incorrect Password<\span>';
             }
